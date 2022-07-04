@@ -4,7 +4,7 @@ let numberic = 2014;
 
 for(let i = 0; i < 37; i++){
   let options = { weekday: 'long'};
-  let data1 = new Date(numberic, 1, 1);
+  let data1 = new Date(numberic, 0, 1);
   
   if(data1.getDay() == 0){
   console.log(new Intl.DateTimeFormat('en-US', options).format(data1) + ' in year -  '  +  data1.getFullYear());
