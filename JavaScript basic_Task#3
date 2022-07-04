@@ -1,0 +1,21 @@
+//Write a JavaScript program to get the current date.
+
+let date = new Date();
+
+let dateDay = date.getDate();
+  if(dateDay.length != 2){
+    dateDay = '0' + dateDay;
+  }
+let dateYear = date.getFullYear();
+let dateMonth = date.getMonth();
+  if(dateMonth.length != 2){
+    dateMonth = '0' + dateMonth;
+  }
+
+console.log(dateMonth + '-' + dateDay + '-' + dateYear);
+console.log(dateMonth + '/' + dateDay + '/' + dateYear);
+
+console.log('____OR____');
+
+console.log(dateDay + '-' + dateMonth + '-' + dateYear);
+console.log(dateDay + '/' + dateMonth + '/' + dateYear);
