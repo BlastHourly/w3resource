@@ -1,0 +1,23 @@
+//
+
+[HTML]
+<button onClick = 'swit()'> SWITCH </button>
+<p id = 'valuer' >VALUE</p>
+
+<p>_______________LOG___________________</p>
+
+[JS]
+let value = document.getElementById('valuer');
+
+function swit(){
+  value.innerHTML = Math.floor(Math.random() * 11);
+  
+  let valub1 = parseInt(prompt("Your number?"));
+  
+  let valub2 = parseInt(value.innerHTML);
+  
+  if(valub1 == valub2){
+    console.log('Good Work');
+  }else console.log('Not matched');
+
+}
