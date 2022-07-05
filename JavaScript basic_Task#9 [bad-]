@@ -1,0 +1,7 @@
+//Write a JavaScript program to calculate days left until next Christmas.
+
+let date = new Date();
+let cristmasDate = new Date(2022, 11, 25);
+
+let answer = Math.ceil(Math.abs(cristmasDate.getTime() - date.getTime()) / (1000 * 3600 * 24));
+console.log('Days to cristmas - ' + answer);
