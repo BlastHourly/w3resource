@@ -1,0 +1,21 @@
+//Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
+
+[HTML]
+<p> 1st number - </p><input type='text' id = 'fstNum' value = '2'> </input>
+
+<p> 2st number - </p><input type='text' id = 'secNum' value = '2'> </input><br>
+<button onclick = 'multiple()'>MULTIPLY</button><br>
+<button onclick = 'divide()'>DIVIDE</button>
+
+[JS]
+function multiple(){
+  
+  console.log(parseInt(document.getElementById('fstNum').value) * parseInt(document.getElementById('secNum').value));
+  
+}
+
+function divide(){
+  
+  console.log(parseInt(document.getElementById('fstNum').value) / parseInt(document.getElementById('secNum').value));
+  
+}
