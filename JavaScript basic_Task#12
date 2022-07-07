@@ -1,0 +1,11 @@
+//Write a JavaScript program to get the website URL (loading page).
+
+[HTML]
+<button onclick = 'getURL()'> GET URL</button>
+<p>Your url is - </p> <p id='btn'>push button</p>
+
+[JS]
+function getURL(){
+  let btn = document.getElementById('btn');
+  btn.innerHTML = window.location.href;
+}
