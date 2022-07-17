@@ -1,0 +1,13 @@
+//JavaScript program to check whether a given integer is within 20 of 100 or 400.
+
+[JS]
+function TRYER(x) {
+  return ((Math.abs(100 - x) <= 20) ||
+	 (Math.abs(400 - x) <= 20));
+}
+
+console.log(TRYER(10));
+console.log(TRYER(90));
+console.log(TRYER(99));
+console.log(TRYER(199));
+console.log(TRYER(200));
