@@ -1,0 +1,13 @@
+//Write a JavaScript program to check from two given integers, whether one is positive and another one is negative
+
+[JS]
+
+function checkTwo(f,s){
+  if (((f % 2 == 0) && (s % 2 != 0)) || ((s % 2 == 0) && (f % 2 != 0)) ){
+  console.log("YEP");
+  }else {
+   console.log("NOPE");
+  }
+}
+
+checkTwo(2,2);
